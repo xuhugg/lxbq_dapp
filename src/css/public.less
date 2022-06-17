@@ -1,0 +1,66 @@
+@holder-color       : #919398; // 占位色
+@base-color         : #333333; // 基础色
+@default-color      : #FFFFFF;
+@theme-color        : #65B1EB;
+@theme-bgcolor      : #EBF5FD;
+@title-color        : #100F0F;
+@reverse-color      : #FFFFFF;
+@base-size          : 14px;
+@app-foot-bar-height: 50px;
+@app-header-height  : 40px;
+@app-foot-color     : #999999;
+
+.btnCom {
+  color           : @reverse-color;
+  width           : 100%;
+  padding         : 11px 0;
+  font-size       : 16px;
+  text-align      : center;
+  border-style    : none;
+  border-radius   : 22px;
+  background-color: @theme-color;
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.bgCom {
+  padding: 0 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display    : flex;
+  align-items: center;
+}
+
+.flex-center {
+  .flex-row();
+  justify-content: center;
+}
+
+.flex-between {
+  .flex-row();
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-column {
+  display       : flex;
+  flex-direction: column;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-end {
+  align-items: flex-end;
+}
